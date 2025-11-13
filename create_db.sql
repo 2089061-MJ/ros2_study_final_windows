@@ -1,0 +1,12 @@
+- 스키마(데이터베이스) 생성
+CREATE DATABASE IF NOT EXISTS rosdb
+DEFAULT CHARACTER SET utf8mb4;
+
+- 테이블 생성
+CREATE TABLE IF NOT EXISTS turtle_pos (
+id INT AUTO_INCREMENT PRIMARY KEY, -- 자동 증가
+x DOUBLE NOT NULL, -- X 값
+y DOUBLE NOT NULL, -- Y 값
+theta DOUBLE NOT NULL, -- 세타 값
+time DATETIME DEFAULT CURRENT_TIMESTAMP -- 시간 기록
+);
