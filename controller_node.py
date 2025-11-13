@@ -96,6 +96,7 @@ class MyApp(QWidget):
         theta = self.current_pose['theta']
         cursor.execute("INSERT INTO turtle_pos (x, y, theta) VALUES (%s, %s, %s)", (x, y, theta))
         conn.commit()
+        conn.close()
         print(f"저장 완료. x : {x}, y : {y}, theta : {theta}")
 
 
