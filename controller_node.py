@@ -90,15 +90,18 @@ class MyApp(QWidget):
         pose_topic.subscribe(callback)
     
     def save_db(self):
+        conn = db.connect()
         cursor = conn.cursor()
         x = self.current_pose['x']
         y = self.current_pose['y']
         theta = self.current_pose['theta']
         cursor.execute("INSERT INTO turtle_pos (x, y, theta) VALUES (%s, %s, %s)", (x, y, theta))
         conn.commit()
+        cursor.close()
         conn.close()
-        print(f"저장 완료. x : {x}, y : {y}, theta : {theta}")
 
+        print(f"저장 완료. x : {x}, y : {y}, theta : {theta}")
+        
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
