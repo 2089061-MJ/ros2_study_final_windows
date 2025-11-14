@@ -9,8 +9,12 @@ Python, PyQt, MySQL을 이용해서 turtle의 cmd_vel(방향), Pose(좌표), res
 ## 적용하기
 리눅스 우분투 22.04 환경 기준으로 작성하였습니다.
 
-필요한 패키지를 설치합니다.
-  $ sudo apt install ros-humble-rosbridge-server
+### 필요한 패키지를 설치합니다.
+    $ sudo apt install ros-humble-rosbridge-server
+  
+### 9090번 포트로 ROSBridge 서버를 실행합니다.
+    $ ros2 run rosbridge_server rosbridge_websocket -port 9090
+
 
 
 
