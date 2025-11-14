@@ -1,2 +1,16 @@
 # ROS2 실습 과제 
-Python, PyQt, MySQL을 이용해서 turtle의 cmd_vel(방향), Pose(좌표), reset(turtle 초기화) 기능을 앱으로 제어하는 기능 구현하고 Pose 값(x, y, theta)을 DB에 저장하는 기능도 구현하였습니다.
+Python, PyQt, MySQL을 이용해서 turtle의 cmd_vel(방향), Pose(좌표), reset(turtle 초기화) 기능을 앱으로 제어하는 기능을 구현하고 현재 turtle의 Pose 값(x, y, theta)을 DB에 저장하는 기능도 구현하였습니다.
+
+## 요구 사항
+1. ROSBridge가 제공하는 웹 소켓 서버를 활성화 해야합니다.(리눅스 환경)
+2. 리눅스 서버에서 turtlesim_node를 활성화 해놓은 상태여야 합니다.
+3. MySQL 데이터베이스 스키마, 테이블 생성 필수
+
+## 적용하기
+리눅스 우분투 22.04 환경 기준으로 작성하였습니다.
+
+필요한 패키지를 설치합니다.
+  $ sudo apt install ros-humble-rosbridge-server
+
+
+
