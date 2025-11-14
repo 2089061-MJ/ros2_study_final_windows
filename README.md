@@ -16,7 +16,7 @@ Python, PyQt, MySQL을 이용해서 turtle의 cmd_vel(방향), Pose(좌표), res
     $ pip3 install PyQt5-tools
     $ pip3 install roslibpy
     
-### turtlesim을 실행합니다.
+### 리눅스 서버에서 turtlesim을 실행합니다.(ROS2 Humble 설치 필수)
     $ source /opt/ros/humble/setup.bash
     $ ros2 run turtlesim turtlesim_node
   
