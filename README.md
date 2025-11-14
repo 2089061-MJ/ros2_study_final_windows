@@ -11,6 +11,10 @@ Python, PyQt, MySQL을 이용해서 turtle의 cmd_vel(방향), Pose(좌표), res
 
 ### 필요한 패키지를 설치합니다.
     $ sudo apt install ros-humble-rosbridge-server
+    $ pip3 install pymysql
+    $ pip3 install PyQt5
+    $ pip3 install PyQt5-tools
+    $ pip3 install roslibpy
   
 ### 9090번 포트로 ROSBridge 서버를 실행합니다.
     $ ros2 run rosbridge_server rosbridge_websocket -port 9090
