@@ -18,5 +18,11 @@ Python, PyQt, MySQL을 이용해서 turtle의 cmd_vel(방향), Pose(좌표), res
 ### clone 한 파일 실행
     $ python3 controller_node.py
 
+## 실행
+<img width="293" height="268" alt="스크린샷 2025-11-14 102640" src="https://github.com/user-attachments/assets/077cd7a2-bc6f-4325-9baa-0c4197a97d37" />
+
+[![Video Label](http://img.youtube.com/vi/-K5hbV-BERc/0.jpg)]
+
+
 
 
